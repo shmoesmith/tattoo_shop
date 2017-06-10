@@ -1,8 +1,8 @@
-<nav class="navbar navbar-default">
+<nav class="nav-extended #000000 black">
   <div class="container-fluid">
 
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Tattoo Shop</a>
+      <a href="#" class="brand-logo">Inkface</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li>
           <% if user_signed_in? %>
@@ -11,5 +11,19 @@
         </li>
       </ul>
     </div>
+    <div class="row">
+  <div class="col s12">
+    <ul class="tabs #000000 black">
+      <li class="tab col s3 offset-s2 btn btn-floating pulse #4a148c purple darken-4">
+        <a href="Artists">
+          <span class='#fafafa grey-text text-lighten-5'>Artists</span>
+        </a>
+      </li>
+      <li class="tab col s3 offset-s2 btn btn-floating pulse #4a148c purple darken-4">
+        <a href="Styles">
+          <span class='#fafafa grey-text text-lighten-5'>Styles</span>
+        </a>
+      </li>
+    </ul>
   </div><!-- /.container-fluid -->
 </nav>
