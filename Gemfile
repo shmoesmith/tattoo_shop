@@ -20,7 +20,7 @@ gem 'turbolinks', '~> 5'
 gem 'materialize-sass'
 gem 'devise'
 
-  gem 'paperclip'
+gem "paperclip", "~> 5.0.0"
 
 # Will Paginate Bootstrap
 gem 'will_paginate'
