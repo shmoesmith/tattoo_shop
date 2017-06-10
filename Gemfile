@@ -17,7 +17,6 @@ gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Bootstrap
-gem 'bootstrap-sass'
 gem 'materialize-sass'
 gem 'devise'
 
@@ -35,7 +34,7 @@ group :development, :test do
   gem 'faker'
   gem 'dotenv-rails'
   gem 'paperclip'
-  gem 'has_star'
+
 end
 
 group :development do
