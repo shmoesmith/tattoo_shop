@@ -4,7 +4,7 @@ class CreateArtists < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :description
       t.string :shop
-      t.array :schedule
+      t.string :schedule
 
       t.timestamps
     end
