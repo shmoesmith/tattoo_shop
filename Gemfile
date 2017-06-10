@@ -18,6 +18,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Bootstrap
 gem 'bootstrap-sass'
+gem 'materialize'
 gem 'devise'
 
 # Will Paginate Bootstrap
