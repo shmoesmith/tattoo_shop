@@ -20,6 +20,8 @@ gem 'turbolinks', '~> 5'
 gem 'materialize-sass'
 gem 'devise'
 
+  gem 'paperclip'
+
 # Will Paginate Bootstrap
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
@@ -27,13 +29,13 @@ gem 'will_paginate-bootstrap'
 # OAuth for Facebook
 gem 'omniauth-facebook'
 
+gem 'dotenv-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
   gem 'annotate'
   gem 'faker'
-  gem 'dotenv-rails'
-  gem 'paperclip'
 
 end
 
