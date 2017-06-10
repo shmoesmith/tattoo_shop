@@ -1,2 +1,24 @@
-<h1>Portfolio#index</h1>
-<p>Find me in app/views/portfolio/index.html.erb</p>
+<h1>Portfolios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Style</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @portfolios.each do |portfolio| %>
+      <tr>
+        <td><%= portfolio.artist_id %> </td>
+        <td><%= portfolio.style %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Show Artists', artists_path %> |

@@ -1,7 +1,48 @@
-<h1><%= @artist.name %></h1>
+<h1>Artist: <%= @artist.name %> </h1>
 
+<% unless @artist.shop.empty? %>
+    <p>
+      <strong>Shop:</strong>
+      <%= @artist.shop %>
+    </p>
+<% end %>
 
-<div class='center'>
+<% unless @artist.description.empty? %>
+    <p>
+      <strong>Description:</strong>
+      <%= @artist.description %>
+    </p>
+<% end %>
 
-  
-</div>
+<% unless @artist.schedule.empty? %>
+    <p>
+      <strong>Schedule:</strong>
+      <%= @artist.schedule %>
+    </p>
+    <hr />
+<% end %>
+
+<% if @artist.porfolios.any? %>
+    <h5> Porfolios </h5>
+    <div class="row">
+
+      <% @artist.portfolios.each do |portfolio| %>
+
+        <ul class="collection">
+        <li class="collection-item avatar">
+        <span class="title"><%= portfolio.style %> %></span>
+
+<!-- need to add something to show pictures here -->
+
+        </li>
+        </ul>
+
+      <% end %>
+    </div>
+
+ <% else %>
+  <h5>No Portfolios Found</h5>
+<% end %>
+
+<%= link_to 'Show All Artists', artists_path %> |
+
