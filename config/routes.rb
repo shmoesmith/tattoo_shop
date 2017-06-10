@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'portfolios/index'
+
+  get 'portfolios/show'
+
+  get 'portfolios/exit'
+
+  get 'artists/index'
+
+  get 'artists/show'
+
+  get 'artists/exit'
+
   get 'home/index'
 
   devise_for :users, :controllers => {:omniauth_callbacks => "users/omniauth_callbacks" }

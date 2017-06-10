@@ -1,4 +1,4 @@
-class ArtistController < ApplicationController
+class ArtistsController < ApplicationController
   before_action :set_artist, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -47,5 +47,4 @@ class ArtistController < ApplicationController
     def artist_params
       params.require(:artist).permit(:name, :description, :shop)
     end
-
 end
