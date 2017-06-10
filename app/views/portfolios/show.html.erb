@@ -1,2 +1,4 @@
-<h1>Portfolios#show</h1>
-<p>Find me in app/views/portfolios/show.html.erb</p>
+ <h1> Style: <%= @portfolio.style %> </h1>
+<% @portfolio.photo_urls.each do |url| %>
+   <img src=<%= url %> />
+ <% end %>

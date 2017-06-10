@@ -25,10 +25,8 @@ ActiveRecord::Schema.define(version: 20170610203533) do
   end
 
   create_table "portfolios", force: :cascade do |t|
-    t.string "avatar_file_name"
-    t.string "avatar_content_type"
-    t.integer "avatar_file_size"
     t.string "style"
+    t.text "photo_urls"
     t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

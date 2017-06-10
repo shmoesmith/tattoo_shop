@@ -5,7 +5,7 @@ class CreateArtists < ActiveRecord::Migration[5.1]
       t.text :description
       t.string :shop
       t.string :schedule
-
+      
       t.timestamps
     end
   end
