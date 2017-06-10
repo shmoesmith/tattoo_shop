@@ -30,9 +30,8 @@
 
         <ul class="collection">
         <li class="collection-item avatar">
-        <span class="title"><%= portfolio.style %> %></span>
+        <span class="title"><%= link_to portfolio.style, artist_portfolio_path(@artist, portfolio) %></span>
 
-<!-- need to add something to show pictures here -->
 
         </li>
         </ul>
