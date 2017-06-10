@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :artists do
   resources :portfolios
+
+ #get 'portfolios', to: 'portfolios#something_else', as: 'portfolios'
   end
 
 root 'home#index'
